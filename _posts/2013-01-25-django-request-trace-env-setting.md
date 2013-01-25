@@ -49,3 +49,23 @@ Django는 간편하게 pip를 사용해서 설치하면 되지만 이건 stable�
     1.5b1
     1.5b2
 
+1.5버전의 최신 태그로 체크아웃을 하면 소스가 해당 버전의 상태가 된다. 그러면 그상태로 인스톨하면 끝.
+
+    $ git checkout 1.5b2
+    $ python setup.py install
+
+#ipdb 의 활용
+소스코드의 실행 과정을 추적하기 위해서는 브레이크 포인트를 걸고 라인단위로 실행할 방법이 필요한데 eclipse pydev같은 IDE를 사용할수도 있지만 개인적으로는 간단하게 사용할수 있는 ipdb를 사용한다.
+
+설치는 pip 를 사용해서 간단하게 된다.
+
+    $ pip install ipdb
+
+그리고 브레이크 포인트를 걸 특정 지점에 다음의 코드만 넣으면 끝~
+
+{% highlight python %}
+import ipdb;ipdb.set_trace()
+{% endhighlight %}
+
+코드가 실행되다가 위의 코드를 만나면 거기서 실행이 중단되고 디버깅 쉘이 뜨게 된다.
+
