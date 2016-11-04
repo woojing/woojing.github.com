@@ -1,59 +1,108 @@
 <!doctype html>
 <meta charset="utf-8">
+<link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+<link type="text/css" rel="stylesheet" href="../materialize/css/materialize.min.css"  media="screen,projection"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 <link rel="stylesheet" href="../static/style.css">
 <link rel="stylesheet" href="../static/pygments.css">
-<title> — daily-log</title>
+<title> — Not That Much</title>
 <body>
   <header>
-    <h1>daily-log</h1>
     <nav>
-      <ul class="nav navbar-nav">
-        <li><a href="../">Welcome</a></li>
-        
-          <li class="active"><a href="../blog/">Blog</a></li>
-        
-          <li><a href="../projects/">Projects</a></li>
-        
-          <li><a href="../about/">About</a></li>
-        
-      </ul>
+      <div class="nav-wrapper row">
+        <div class="col s12">
+          <a href="#" class="brand-logo">Not That Much</a>
+          <ul class="right hide-on-med-and-down">
+            <li><a href="../">Welcome</a></li>
+            
+              <li class="active"><a href="../blog/">Blog</a></li>
+            
+              <li><a href="../projects/">Projects</a></li>
+            
+              <li><a href="../about/">About</a></li>
+            
+          </ul>
+        </div>
+      </div>
     </nav>
   </header>
-  <div class="page">
+  <div class="container">
     
   
     
   <div class="blog-post">
   
-    <h2><a href="../blog/first-post/">Hello Website</a></h2>
+    <h2 class='header'><a href="../blog/make-template-with-materialize-css/">Make Lektor Template with Materialize CSS</a></h2>
   
-  <p class="meta">
-    written by
+  <div class="row">
+    <div class='chip'>
+    
+      <a href="https://twitter.com/woojing">woojing</a>
+    
+    on 2016-11-04
+    </div>
+    <div class='chip'>
+        <a href="../blog/tag/today i learned/">today i learned</a>
+      </div>
+    
+  </div>
+  <div class='card-panel'>
+    <p class='flow-text'>
+      <p>Lektor가 생긴지 얼마 안되어서 그런지 템플릿같은건 따로 패키지화된게 없어서 직접 CSS프레임웍을 가지고 템플릿을 수정하였다.
+문제는 내 디자인 감각이 재앙 수준이라 CSS프레임웍을 사용해도 그다지 이쁜 페이지가 나오지는 않는다는것.</p>
+
+    </p>
+  </div>
+  </div>
+
+  
+    
+  <div class="blog-post">
+  
+    <h2 class='header'><a href="../blog/first-post/">Hello Website</a></h2>
+  
+  <div class="row">
+    <div class='chip'>
     
       woojing
     
     on 2016-10-10
-  </p>
-  <p>This is an example blog post.  Not much here but that's not the point :)</p>
+    </div>
+    <div class='chip'>
+        <a href="../blog/tag/nothing/">nothing</a>
+      </div>
+    
+  </div>
+  <div class='card-panel'>
+    <p class='flow-text'>
+      <p>This is an example blog post.  Not much here but that's not the point :)</p>
 
+    </p>
+  </div>
   </div>
 
   
 
   
-  <div class="pagination">
+  <ul class="pagination">
     
-      <span class="disabled">&laquo; Previous</span>
+      <li class="disabled"><a href="#!"><i class="material-icons">chevron_left</i></a></li>
     
-    | 1 |
+      <li class='active'><a>1</a></li>
     
-      <span class="disabled">Next &raquo;</span>
+      <li class="disabled"><i class="material-icons">chevron_right</i></li>
     
-  </div>
+  </ul>
 
 
   </div>
-  <footer>
-    &copy; Copyright 2016 by Woo jing Seok.
+  <footer class='page-footer'>
+    <div class="footer-copyright">
+      <div class="container">
+        &copy; Copyright 2016 by Woojing.
+      </div>
+    </div>
   </footer>
+  <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+  <script type="text/javascript" src="../materialize/js/materialize.min.js"></script>
 </body>
